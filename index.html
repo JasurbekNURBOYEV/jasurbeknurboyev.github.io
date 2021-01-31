@@ -8,37 +8,52 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-
+    <script>
+        function get_years(initial_year) {
+            // to get difference between this year and initial year
+            const dif = new Date().getFullYear() - initial_year;
+            let representable_string = dif + " year";
+            if (dif > 1) {
+                representable_string += "s";
+            }
+            return representable_string;
+        }
+    </script>
 </head>
 <body>
     <!--  main body  -->
     <div class="container" style="alignment: center; padding-top: 60px; max-width: 800px;">
 
         <!-- intro -->
+        <h3>Jasurbek NURBOYEV <sup><span class="badge bg-secondary text-light">middle Python dev</span></sup></h3>
           <div class="card-body">
-            <h3>Jasurbek NURBOYEV <sup><span class="badge bg-secondary text-light">middle Python dev</span></sup></h3>
             <div class="alert alert-secondary" role="alert">
               This site (the html thingy) was written by a backend dev. You are not going to see fireworks here.
-              You deserve the right not to read all of the content on this page, thanks.
             </div>
           </div>
 
-        <!-- background       -->
+        <!-- background -->
         <h4>A little bit about me</h4>
         <div class="card-body">
             <p>
-                Completing the tasks? It is my job. Watching animes is something I do enjoy. It is my daily activity to do researches based
-                on anything that got my attention (mostly related to computer science, and science in general). <br>
-                Was that part about animes a joke? No. I suggest watching Attack on Titans, you will definitely love it.
-                 If you need a longer list, contact me, I'll provide you with my favourite ones.
+                Everything is pretty simple here. It is my daily activity to do researches based
+                on anything that gets my attention (mostly related to computer science, and science in general). <br>
+                One more thing. I suggest watching "Attack on Titan" or "Your Name" (animes), you will definitely love it.
+                If you need a longer list, contact me, I'll provide you with my favourite ones.
             </p>
         </div>
 
+        <!-- this is what you came for -->
         <h4>What I know?</h4>
         <div class="card-body">
             <h5>Python</h5>
                 <p>
-                    This is something I'm good at. I have <code>{THIS_YEAR-2016}</code> years of experience. It's what it's.
+
+                    This is something I'm good at. I have
+                    <script>
+                        document.write(get_years(2016));
+                    </script>
+                     of experience. It's what it's.
                 </p>
             <h5>Django</h5>
                 <p>
@@ -47,21 +62,26 @@
                 </p>
             <h5>Django Rest Framework</h5>
                 <p>
-                    I started using this framework in 2020. I was supposed to work on a project that requires it,
+                    <script>
+                        document.write(get_years(2020));
+                    </script>
+                     of experience. I was supposed to work on a project that requires it,
                     so here we go. Since then I'm learning it...
                 </p>
-            <h5>C, C++, Java, Swift, C#</h5>
+            <h5>C, C++, Java, Swift, C#, JavaScript</h5>
                 <p>
                     Don't get the wrong idea. I don't know all of these languages well. I used Java for Android development
                     during my freshman year at university (overall 1 year of experience on android development).<br>
                     I've completed a course on Swift during a quarantine, and developed a little iOS app. But that doesn't
                     make me an iOS dev.<br>
-                    I know basics of C, C++ and C#. But never done a project with them.
+                    I know basics of C, C++, C# and JS. But never done a project with them.
                 </p>
             <h5>Docker, Docker-compose</h5>
                 <p>
                     I've started working with these containerization tools in 2020 (due to my job). <br>
-                    If <code>{THIS_YEAR-2020} >= 1</code>, that means I already have a good level of understanding of these tools and I can get the job done.
+                    <script>
+                        document.write(get_years(2020));
+                    </script> of experience, that means I already have a good level of understanding of these tools and I can get the job done.
                 </p>
             <h5>Telegram bots</h5>
              <p>
@@ -78,10 +98,14 @@
                     You are watching what I can do with HTML, CSS. I opened boostrtap docs, tried to use some cool things there
                     and ended up using this p, h, div... things. If you need a front-end dev, close this tab, exit the site.
                 </p>
-
+            <h5>Version control</h5>
+                <p>
+                    Git (hub, lab, ?..).
+                    I'm good at using it, but it's not fun to participate in 'git wars', or more properly 'merge wars'.
+                </p>
         </div>
 
-        <!-- my projects       -->
+        <!-- my projects -->
         <h4>What I've done so far...</h4>
         <div class="card-body">
             <p><a href="http://ams.weltlink.co">ams.weltlink.co</a> - backend of the project.</p>
@@ -98,12 +122,9 @@
                 want to show (which means they might be some kind of worthless crap).</p>
         </div>
 
-        <!-- chrnology -->
+        <!-- chronology -->
         <h4>Chronology</h4>
         <div class="card-body">
-            <h5>1999</h5>
-            <p>I was born.</p>
-            <hr>
             <h5>2015-2018</h5>
             <p>Student of academic lyceum under University of World Economy and Diplomacy. Well, I was supposed to be
             a someone like an ambassador. Not gonna lie, I could have been a good ambassador.
@@ -125,6 +146,8 @@
             <h5>2020-currently</h5>
             <p>Python backend engineer at <a href="https://weltlink.co">Weltlink</a>.</p>
         </div>
+
+        <!-- in case You would like to say something to me -->
         <h4>Contacts</h4>
         <div class="card-body">
             <p>Gitlab: <a href="https://gitlab.com/JasurbekNURBOYEV">JasurbekNURBOYEV</a></p>
@@ -132,7 +155,6 @@
             <p>LinkedIn: <a href="https://www.linkedin.com/in/jasurbek-nurboyev-99b126199">Jasurbek Nurboyev</a></p>
             <p>Telegram: <a href="https://t.me/futuredreams">@futuredreams</a></p>
         </div>
-
 
     </div>
 
